@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Resume | Rajnish Singh</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💼</text></svg>">
+	<style>
+		.pdf-iframe {
+			width: 100%;
+			height: 800px;
+			border: none;
+		}
+		@media (max-width: 768px) {
+			.pdf-iframe {
+				height: 600px;
+			}
+		}
+		@media (max-width: 480px) {
+			.pdf-iframe {
+				height: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav">
+			<a class="brand" href="index.html">Rajnish's Portfolio</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">☰</button>
+			<nav class="nav-links" id="navMenu">
+				<a href="index.html">Home</a>
+				<a href="skills.html">Skills</a>
+				<a href="projects.html">Projects</a>
+				<a href="resume.html" class="active">Resume</a>
+				<a href="contact.html">Contact</a>
+				<button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container" style="padding: 60px 0; text-align: center;">
+		<section class="page-header">
+			<h1>My Resume</h1>
+			<p>Download my resume to learn more about my experience and skills.</p>
+		</section>
+
+		<div class="card" style="max-width: 600px; margin: 40px auto; padding: 40px;">
+			<h2 style="margin-bottom: 20px;">Resume (PDF)</h2>
+			<p style="margin-bottom: 30px; color: var(--bio-text);">
+				You can download or view my resume in PDF format using the buttons below. The resume includes my technical skills, projects, achievements, and education.
+			</p>
+			<div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+				<button id="viewResumeBtn" class="btn primary" style="font-size: 16px; padding: 14px 28px;">
+					👁️ View Resume PDF
+				</button>
+				<button id="downloadResumeBtn" class="btn" style="font-size: 16px; padding: 14px 28px;">
+					📄 Download Resume PDF
+				</button>
+			</div>
+			<div id="resumeError" style="color: #e74c3c; margin-top: 15px; display: none;">
+				There was an error accessing the resume. Please try again later.
+			</div>
+		</div>
+
+		<section style="margin-top: 60px;">
+			<h2>Quick Summary</h2>
+			<div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 30px;">
+				<div class="card">
+					<h3>Technical Skills</h3>
+					<p>HTML5, CSS3, JavaScript, React, Git & GitHub</p>
+				</div>
+				<div class="card">
+					<h3>Tools & Platforms</h3>
+					<p>VS Code, Figma, Chrome DevTools, Netlify, GitHub Pages</p>
+				</div>
+				<div class="card">
+					<h3>Soft Skills</h3>
+					<p>Communication, Problem Solving, Teamwork, Time Management</p>
+				</div>
+			</div>
+		</section>
+
+		<section style="margin-top: 40px;">
+			<h2>Featured Projects</h2>
+			<div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 30px;">
+				<article class="card">
+					<h3>Portfolio Website</h3>
+					<p>Multi-page responsive site with dark/light theme toggle</p>
+				</article>
+				<article class="card">
+					<h3>To-Do App</h3>
+					<p>Task management with localStorage and keyboard shortcuts</p>
+				</article>
+				<article class="card">
+					<h3>Weather Dashboard</h3>
+					<p>Real-time weather data with API integration</p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<p>© <span id="year"></span> Rajnish's Portfolio</p>
+			<div class="social">
+				<a href="https://github.com/Rajnish026" target="_blank" rel="noopener">GitHub</a>
+				<a href="https://www.linkedin.com/in/rajnish-singh-236250358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a>
+				<a href="mailto:24amtics291@gmail.com">Email</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
