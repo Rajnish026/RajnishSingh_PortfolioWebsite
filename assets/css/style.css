@@ -130,6 +130,12 @@ img {
 	margin-left: auto;
 }
 
+.hero-media {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
 .hero-cta { margin-top: 18px; display: flex; gap: 12px; }
 
 .btn {
